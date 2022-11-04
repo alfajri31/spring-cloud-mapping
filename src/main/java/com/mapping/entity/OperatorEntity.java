@@ -29,7 +29,6 @@ public class OperatorEntity extends BaseEntityUUID {
     @OneToMany(mappedBy = "operatorEntity",fetch = FetchType.LAZY)
     private Set<PacketEntity> packetEntities;
     @ManyToOne(fetch = FetchType.LAZY)
-    @ToString.Exclude
     @JoinColumn(name = "source_api_entity_id")
     private SourceApiEntity sourceApiEntity;
 }

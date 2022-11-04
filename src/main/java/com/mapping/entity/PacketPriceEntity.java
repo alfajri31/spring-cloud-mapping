@@ -13,6 +13,5 @@ public class PacketPriceEntity extends BaseEntityUUID {
     private Double nominal;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="packet_entity_id")
-    @ToString.Exclude
     private PacketEntity packetEntity;
 }

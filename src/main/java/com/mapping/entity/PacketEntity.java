@@ -24,6 +24,5 @@ public class PacketEntity extends BaseEntityUUID {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "operator_entity_id")
-    @ToString.Exclude
     private OperatorEntity operatorEntity;
 }
